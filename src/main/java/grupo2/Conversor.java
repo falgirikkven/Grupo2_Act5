@@ -24,10 +24,7 @@ public class Conversor {
         return peso / factor;
     }
 
-    public static double calcularCotizacion(double dolar, double peso) throws Exception {
-        if (dolar <= 0 || peso <= 0) {
-            throw new Exception("Bad parameters. Must be higher than zero");
-        }
+    public static double calcularCotizacion(double dolar, double peso) {
         factor = peso / dolar;
         return factor;
     }
